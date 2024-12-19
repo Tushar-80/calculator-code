@@ -2,8 +2,110 @@
 <html>
 <head>
     <title>Calculator</title>
+    <style>
+          @font-face {
+    font-family: 'DS-Digital Normal';
+    font-style: normal;
+    font-weight: normal;
+    src: local('DS-Digital Normal'), url('DS-DIGI.woff') format('woff');
+    }
+    
+    .calculator-body {
+        height: 290px;
+        width: 300px;
+        background-color: #3d3d5c;
+        margin: 100px auto;
+        border-radius: 10px;
+        padding: 20px;
+        padding-top: 40px;
+      }
+      .screen {
+        background-color: #a1af77;
+        text-align: right;
+        width: 270px;
+        display: block;
+        margin: 0 auto;
+        font-size: 25px;
+        padding: 5px 10px;
+        margin-bottom: 25px;
+        font-family: "DS-Digital Normal";
+      }
+      .buttons-container {
+        height: 210px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .btn {
+        width: 50px;
+        text-align: center;
+        padding: 2px 0;
+        font-size: 19px;
+        margin: 5px;
+        border: 0.5px solid black;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .btn:hover {
+        box-shadow: 0 0 5px 0 #fff;
+        transition: 0.5s;
+      }
+
+      .btn-equals {
+        background-color: black;
+        height: 70px;
+        color: #fff;
+      }
+      .btn-color{
+        background-color: #ff6348;
+        color: white;
+      }
+      .btn-color1{
+        background-color: #bfbfbf;
+      }
+      .btn-color2{
+        background-color:black ;
+        color: white;
+      }
+    </style>
 </head>
 <body>
-    
-</body>
-</html>
+    <div class="calculator-body">
+        <input type="text" value="0" class="screen" />
+        <div class="buttons-container">
+          <button class="btn btn-color2">OFF</button>
+          <button class="btn btn-color2">%</button>
+          <button class="btn btn-color2">@</button>
+          <button class="btn btn-color">C</button>
+          <button class="btn btn-color">AC</button>
+  
+          <button class="btn btn-color2">MRC</button>
+          <button class="btn btn-color1">7</button>
+          <button class="btn btn-color1">4</button>
+          <button class="btn btn-color1">1</button>
+          <button class="btn btn-color1">0</button>
+  
+          <button class="btn btn-color2">M-</button>
+          <button class="btn btn-color1">8</button>
+          <button class="btn btn-color1">5</button>
+          <button class="btn btn-color1">2</button>
+          <button class="btn btn-color1">.</button>
+  
+          <button class="btn btn-color2">M+</button>
+          <button class="btn btn-color1">9</button>
+          <button class="btn btn-color1">6</button>
+          <button class="btn btn-color1">3</button>
+          <button class="btn btn-color2">=</button>
+
+          <button class="btn btn-color2">/</button>
+          <button class="btn btn-color2">*</button>
+          <button class="btn btn-color2">-</button>
+          <button class="btn btn-equals">+</button>
+        </div>
+      </div>
+    </body>
+  </html>
